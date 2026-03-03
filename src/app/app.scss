@@ -1,0 +1,62 @@
+:host {
+  font-family: Inter, Arial, sans-serif;
+  color: #1f2937;
+}
+
+.workshop {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+section {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #ffffff;
+}
+
+h1,
+h2 {
+  margin: 0 0 0.75rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+.inline-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 0.35rem 0.7rem;
+}
+
+.success {
+  color: #166534;
+}
+
+.hint {
+  color: #92400e;
+}
+
+pre {
+  background: #111827;
+  color: #f9fafb;
+  padding: 0.75rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
