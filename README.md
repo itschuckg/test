@@ -1,59 +1,54 @@
-# LearnAngular
+# LearnAngular Workshop
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+This branch contains a **step-by-step Angular feature walkthrough** so you can learn by editing and running one app.
 
-## Development server
-
-To start a local development server, run:
+## Branch used for workshop
 
 ```bash
-ng serve
+git checkout feat/angular-step-by-step
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Run locally
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Then open `http://localhost:4200`.
+
+## Step-by-step implementation plan
+
+1. **Component + template basics**
+   - `App` is a standalone component (`src/app/app.ts`).
+   - Template lives in `src/app/app.html`, styles in `src/app/app.scss`.
+
+2. **Data binding**
+   - One-way binding with `{{ }}` interpolation.
+   - Event binding with `(input)`.
+   - Property binding with `[value]`.
+
+3. **Directives and built-in control flow**
+   - `@for` loops through lessons.
+   - `@if` shows completion messages.
+
+4. **Forms**
+   - `[(ngModel)]` captures numeric progress.
+   - Add a custom lesson with input + button event.
+
+5. **Signals + computed state**
+   - `signal()` stores name, lessons, and debug state.
+   - `computed()` derives progress labels and completion state.
+
+6. **Pipes**
+   - `date` pipe for readable dates.
+   - `number` and `percent` pipe for progress formatting.
+   - `json` pipe for optional debug output.
+
+## Useful scripts
 
 ```bash
-ng generate --help
+npm start      # dev server
+npm run build  # production build
+npm test       # unit tests
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
